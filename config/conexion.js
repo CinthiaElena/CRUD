@@ -1,5 +1,5 @@
 var mysql=require("mysql");
-var con=mysql.createConnection({
+var con= mysql.createConnection({
     host:'localhost',
     user:'root',
     password: '',
@@ -11,11 +11,10 @@ con.connect(
     (err)=>{
         if(!err){
             console.log('Conexión establecida');
-        }
-    else{
+        } else{
         console.log('Error de conexión'); 
      }
     }
 );
 
-module.export=con; 
+module.exports=con; 
