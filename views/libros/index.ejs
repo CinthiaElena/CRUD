@@ -2,12 +2,12 @@
         <br/>
         <br/>
         
-        <a href="/libros/crear" class="btn btn-primary" type="button">Añadir libro</a>
+        <a href="/libros/crear" class="btn btn-light" type="button">Añadir libro</a>
 
         <br/>
         <br/>
-        <table class="table table-light">
-            <thead class="thead-light">
+        <table class="table" style="background-color:rgb(0,0,0);">
+            <thead class="" style="background-color:rgb(226, 226, 226); color:black;">
                 <tr>
                     <th>ID</th>
                     <th>Nombre</th>
@@ -15,12 +15,12 @@
                     <th>Año</th>
                     <th>Páginas</th>
                     <th>Categoria</th>
-                    <th>Sinopsis</th>
+                    <th style=" width: max-content; "scope="col">Sinopsis</th>
                     <th>Imagen</th>
-                    <th>Acciones</th>
+                    <th scope="col">Acciones</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody style="color:aliceblue;">
                 <% for( let libro = 0; libro < libros.length; libro++ ) { %>
                 
                 <tr>
@@ -47,7 +47,7 @@
                         <div class="<div class="btn-group" role="group" aria-label="button group">
                             
                             <form class="form-inline" method="post" action="/libros/editar/<%=libros[libro].id  %>">
-                                <button class="btn btn-warning" type="submit">Editar</button>
+                                <button class="btn btn-light" type="submit" style="font-family:'Quicksand', sans-serif;">Editar</button>
                             </form>
 
                         </div>
@@ -55,7 +55,7 @@
                         <div class="<div class="btn-group" role="group" aria-label="button group">
                             
                             <form class="form-inline" method="post" action="/libros/eliminar/<%=libros[libro].id  %>">
-                                <button class="btn btn-danger" type="submit">Borrar</button>
+                                <button class="btn btn-light" type="submit" style="font-family:'Quicksand', sans-serif;">Borrar</button>
                             </form>
 
                         </div>
