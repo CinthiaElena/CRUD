@@ -1,9 +1,9 @@
 var mysql=require("mysql");
 var con= mysql.createConnection({
-    host:'localhost',
-    user:'root',
-    password: '',
-    database: 'biblioteca'
+    host:'us-cdbr-east-06.cleardb.net',
+    user:'b6dd65c7505df8',
+    password: 'ad233d50',
+    database: 'heroku_cec25afef1b3f28'
 }
 );
 
