@@ -1,19 +1,58 @@
 <%- include ("../layouts/cabecera.ejs") %> 
-
-<form method="post" action="/libros" enctype="multipart/form-data">
+</br>
+</br>
+<div class="card">
+    <div class="card-header">
+        Formulario de captura
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">Datos del libro</h5>
+        <p class="card-text">
+            <form method="post" action="/libros">
     
-<div class="form-group">
-    <label for="my-input">Nombre</label>
-    <input id="my-input" class="form-control" type="text" name="nombre">
+                <div class="form-group">
+                    <label for="my-input">Nombre</label>
+                    <input id="my-input" class="form-control" type="text" name="nombre">
+                </div>
+            <!--
+                <div class="form-group">
+                    <label for="my-input">Imagen</label>
+                    <input id="my-input" class="form-control-file" type="file" name="archivo">
+                </div> -->
+
+                <div class="form-group">
+                    <label for="my-input">Año</label>
+                    <input id="my-input" class="form-control" type="text" name="fecha">
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="my-input">Número de páginas</label>
+                    <input id="my-input" class="form-control" type="text" name="paginas">
+                </div>
+
+                <div class="form-group">
+                    <label for="my-input">Sinopsis</label>
+                    <textarea id="my-input" class="form-control" id="exampleFormControlTextarea1" rows="3" name="sinopsis"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="my-input">Categoría</label>
+                    <input id="my-input" class="form-control" type="text" name="categoria">
+                </div>
+
+                <div class="form-group">
+                    <label for="my-input">Autor</label>
+                    <input id="my-input" class="form-control" type="text" name="autor">
+                </div>
+                
+                <button class="btn btn-success" type="submit">Guardar</button>
+                <a class="btn btn-primary" href="/libros">Cancelar</a>
+                </form>
+
+        </p>
+    </div>
 </div>
 
-<div class="form-group">
-    <label for="my-input">Imagen</label>
-    <input id="my-input" class="form-control-file" type="file" name="archivo">
-</div>
-
-<button class="btn btn-primary" type="submit">Guardar</button>
-
-</form>
 
 <%- include ("../layouts/pie.ejs") %> 
